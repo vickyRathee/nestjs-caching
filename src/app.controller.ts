@@ -11,4 +11,10 @@ export class AppController {
     const data = this.appService.getHello();
     res.status(200).json(data);
   }
+
+  @Get('/this-works')
+  getWorks() {
+    const data = this.appService.getHello();
+    return data;
+  }
 }
